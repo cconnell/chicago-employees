@@ -1,0 +1,12 @@
+<h1>DON'T EAT HERE!!!</h1>
+
+<% @inspections.each do |inspection| %>
+  <h2><%= inspection["dba_name"] %></h2>
+  <h2><%= inspection["results"] %></h2>
+  <h2><%= inspection["inspection_date"] %></h2>
+  <hr>
+
+
+
+
+  <% end %>

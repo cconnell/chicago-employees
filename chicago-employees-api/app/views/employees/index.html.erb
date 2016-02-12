@@ -1,0 +1,9 @@
+<h1>Chicago Employees</h1>
+<% @employees.each do |employee| %>
+  <h2><%= employee["name"] %></h2>
+    <h2><%= employee["job_titles"] %></h2>
+      <h2><%= number_to_currency(employee["employee_anual_salary"]) %></h2>
+
+
+
+  <% end %>
